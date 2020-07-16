@@ -1,0 +1,15 @@
+class ChattyStudent < Student
+
+  def hello
+    print super
+    print "How are you doing today? I'm okay, but I'm kind of tired. Did you watch The Walking Dead last night? You didn't?! Oh man, it was so crazy! What, you don't want any spoilers? Okay well let me just tell you who died...\n"
+  end
+
+  def raise_hand
+    for i in 1..10 do
+      super
+      i += 1
+    end
+  end
+
+end
